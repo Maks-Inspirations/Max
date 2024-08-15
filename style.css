@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+
+ /* Общие стили */
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +10,53 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: url('img.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  margin: auto;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-me {
+  text-align: center;
+}
+
+.about-me img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Стили для страницы регистрации */
 .wrapper {
   width: 420px;
   background: rgba(0, 0, 0, 0.5); 
@@ -113,3 +154,4 @@ body {
 .register-link a:hover {
   text-decoration: underline;
 }
+
