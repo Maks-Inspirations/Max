@@ -210,7 +210,8 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
 }
-/
+
+
 .coming-soon-message {
   display: none; 
   position: fixed;
@@ -228,4 +229,3 @@ body {
   z-index: 9999;
 }
 
- 
