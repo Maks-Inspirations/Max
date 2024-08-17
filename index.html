@@ -3,75 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <!-- Подключение Boxicons -->
     <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="wrapper">
-        <form action="">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" placeholder="Username" required>
-                <i class='bx bxs-user'></i> <!-- Значок пользователя из Boxicons -->
-            </div>
-
-            <div class="input-box">
-                <input type="password" placeholder="Password" required>
-                <i class='bx bxs-lock-alt' ></i><!-- Значок замка из Boxicons -->
-            </div>
-
-            <div class="remember-forgot">
-                <label><input type="checkbox"> Remember me</label>
-                <a href="#">Forgot password</a>
-            </div>
-
-            <button type="submit" class="btn">Login</button>
-
-            <div class="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
-            </div>
-        </form>
+    <!-- Заставка -->
+    <div class="loader">
+        <p>Loading...</p>
     </div>
-  
-</body>
-</html>
 
-
-
-
-<head>
-    
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <h1>About Me</h1>
-        </header>
-        <section class="about-me">
-            <h2>Hello, I'm [Maks]</h2>
-            <p>I am [16] years old and I love [boxing,motosport,programming].</p>
-            <p>Here are some of the projects I've worked on:</p>
+    <header>
+        <nav class="navbar">
             <ul>
-                <li>Project 1 - Login and register on HTML AND CSS</li>
-                
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects" id="projects-link">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="screenshots">
-                <h2>Screenshots</h2>
-                
-                <img src="img.jpg2.png" alt="Profile Picture">
-                <img src="img.jpg3.png" alt="Profile Picture">
-                <img src="img.jpg" alt="Profile Picture"> 
-                <img src="jpg.1.png" alt="Profile Picture">
-                <img src="jpg.2.png" alt="Profile Picture">
-                
-            </div>
-    
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <section id="login">
+            <h1>Login</h1>
+            <form action="">
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i> <!-- Значок пользователя из Boxicons -->
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i><!-- Значок замка из Boxicons -->
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+            </form>
         </section>
-        <footer>
+
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="about-me">
+                <h2>Hello, I'm [Maks]</h2>
+                <p>I am [16] years old and I love [boxing, motorsport, programming].</p>
+                <p>Here are some of the projects I've worked on:</p>
+                <ul>
+                    <li>Project 1 - Login and register on HTML AND CSS</li>
+                </ul>
+                <div class="screenshots">
+                    <h2>Screenshots</h2>
+                    <img src="img.jpg2.png" alt="Screenshot 1">
+                    <img src="img.jpg3.png" alt="Screenshot 2">
+                    <img src="img.jpg" alt="Screenshot 3">
+                    <img src="jpg.1.png" alt="Screenshot 4">
+                    <img src="jpg.2.png" alt="Screenshot 5">
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
             <p>Contact me at: <a href="mailto:your-maksantoink@gmail.com">maksantoink@gmail.com</a></p>
         </footer>
     </div>
+
+    <!-- Coming Soon message -->
+    <div class="coming-soon-message" id="coming-soon">
+        <p>Coming Soon!</p>
+    </div>
+
+    <!-- Скрипт для скрытия заставки после загрузки страницы и отображения сообщения Coming Soon -->
+    <script>
+        window.addEventListener('load', () => {
+            document.querySelector('.loader').style.display = 'none';
+        });
+
+        document.getElementById('projects-link').addEventListener('click', (event) => {
+            event.preventDefault();
+            document.getElementById('coming-soon').style.display = 'flex';
+        });
+    </script>
 </body>
 </html>
+
+          
