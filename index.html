@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
-  
+    <!-- Подключение Boxicons -->
     <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+    <!-- Заставка -->
     <div class="loader">
         <p>Loading...</p>
     </div>
@@ -30,12 +30,12 @@
             <form action="">
                 <div class="input-box">
                     <input type="text" placeholder="Username" required>
-                    <i class='bx bxs-user'></i> 
+                    <i class='bx bxs-user'></i> <!-- Значок пользователя из Boxicons -->
                 </div>
 
                 <div class="input-box">
                     <input type="password" placeholder="Password" required>
-                    <i class='bx bxs-lock-alt'></i>
+                    <i class='bx bxs-lock-alt'></i><!-- Значок замка из Boxicons -->
                 </div>
 
                 <div class="remember-forgot">
@@ -76,12 +76,12 @@
         </footer>
     </div>
 
-    
+    <!-- Coming Soon message -->
     <div class="coming-soon-message" id="coming-soon">
         <p>Coming Soon!</p>
     </div>
 
-    
+    <!-- Скрипт для скрытия заставки после загрузки страницы и отображения сообщения Coming Soon -->
     <script>
         window.addEventListener('load', () => {
             document.querySelector('.loader').style.display = 'none';
@@ -94,5 +94,3 @@
     </script>
 </body>
 </html>
-
-          
