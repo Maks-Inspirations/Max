@@ -61,7 +61,7 @@ header {
   text-decoration: underline;
 }
 
-/* Стили для страницы регистрации и логина */
+
 .wrapper {
   width: 80%;
   max-width: 1200px;
@@ -162,9 +162,9 @@ header {
   text-decoration: underline;
 }
 
-/* Стили для страницы Coming Soon */
+
 .coming-soon-page {
-  display: none; /* По умолчанию скрыто */
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
@@ -180,45 +180,45 @@ header {
   z-index: 9999;
 }
 
-/* Показать сообщение Coming Soon, если в URL есть #coming-soon */
+
 #coming-soon:target ~ .coming-soon-page {
   display: flex;
 }
-/* Увеличиваем высоту сайта для более длинного контента */
+
 body {
-  min-height: 200vh; /* Делаем страницу в два раза длиннее высоты экрана */
+  min-height: 200vh;
 }
 
-/* Стили для секции с изображениями */
+
 .screenshots {
   display: flex;
-  flex-direction: column; /* Располагает изображения сверху вниз */
-  align-items: center; /* Центрирует изображения по горизонтали */
+  flex-direction: column; 
+  align-items: center; 
   margin: 30px auto;
 }
 
 .screenshots img {
-  width: 80%; /* Ширина изображений относительно контейнера */
-  max-width: 600px; /* Максимальная ширина изображения */
-  height: auto; /* Сохраняет пропорции изображения */
-  margin: 10px 0; /* Вертикальные отступы между изображениями */
-  border-radius: 8px; /* Скругленные углы для красоты */
+  width: 80%; 
+  max-width: 600px; 
+  height: auto; 
+  margin: 10px 0; 
+  border-radius: 8px; 
 }
 
-/* Стили для заголовка секции */
+
 .screenshots h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-/* Стили для страницы Coming Soon */
+/
 .coming-soon-message {
-  display: none; /* По умолчанию скрыто */
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+  background: rgba(0, 0, 0, 0.8); 
   color: #fff;
   font-size: 48px;
   font-weight: bold;
