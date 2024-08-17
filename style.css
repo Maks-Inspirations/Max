@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
-
- /* Общие стили */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +11,57 @@ body {
   background-size: cover;
 }
 
+/* Заставка */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+/* Навигация */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Стили для страницы регистрации и логина */
 .wrapper {
   width: 80%;
   max-width: 1200px;
@@ -25,47 +73,6 @@ body {
   border-radius: 10px;
   padding: 30px;
   margin: auto;
-}
-
-header, footer {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.about-me {
-  text-align: center;
-}
-
-.about-me img {
-  max-width: 200px;
-  border-radius: 50%;
-  margin-top: 20px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Стили для страницы регистрации */
-.wrapper {
-  width: 420px;
-  background: rgba(0, 0, 0, 0.5); 
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  color: #fff;
-  border-radius: 10px;
-  padding: 30px 40px;
 }
 
 .wrapper h1 {
@@ -155,3 +162,70 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Стили для страницы Coming Soon */
+.coming-soon-page {
+  display: none; /* По умолчанию скрыто */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Показать сообщение Coming Soon, если в URL есть #coming-soon */
+#coming-soon:target ~ .coming-soon-page {
+  display: flex;
+}
+/* Увеличиваем высоту сайта для более длинного контента */
+body {
+  min-height: 200vh; /* Делаем страницу в два раза длиннее высоты экрана */
+}
+
+/* Стили для секции с изображениями */
+.screenshots {
+  display: flex;
+  flex-direction: column; /* Располагает изображения сверху вниз */
+  align-items: center; /* Центрирует изображения по горизонтали */
+  margin: 30px auto;
+}
+
+.screenshots img {
+  width: 80%; /* Ширина изображений относительно контейнера */
+  max-width: 600px; /* Максимальная ширина изображения */
+  height: auto; /* Сохраняет пропорции изображения */
+  margin: 10px 0; /* Вертикальные отступы между изображениями */
+  border-radius: 8px; /* Скругленные углы для красоты */
+}
+
+/* Стили для заголовка секции */
+.screenshots h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* Стили для страницы Coming Soon */
+.coming-soon-message {
+  display: none; /* По умолчанию скрыто */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+ 
